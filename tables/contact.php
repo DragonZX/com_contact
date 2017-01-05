@@ -1,21 +1,8 @@
 <?php
-/**
- * @package     Joomla.Administrator
- * @subpackage  com_contact
- *
- * @copyright   Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
 defined('_JEXEC') or die;
 
 use Joomla\Registry\Registry;
 
-/**
- * Contact Table class.
- *
- * @since  1.0
- */
 class ContactTableContact extends JTable
 {
 	/**
@@ -46,9 +33,7 @@ class ContactTableContact extends JTable
 	 *
 	 * @param   boolean  $updateNulls  True to update fields even if they are null.
 	 *
-	 * @return  boolean  True on success, false on failure.
-	 *
-	 * @since   1.6
+	 * @return  boolean  True on success, false on failure
 	 */
 	public function store($updateNulls = false)
 	{
@@ -128,7 +113,6 @@ class ContactTableContact extends JTable
 	 * @return  boolean  True on success, false on failure
 	 *
 	 * @see     JTable::check
-	 * @since   1.5
 	 */
 	public function check()
 	{

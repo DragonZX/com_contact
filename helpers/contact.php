@@ -9,22 +9,9 @@
 
 defined('_JEXEC') or die;
 
-/**
- * Contact component helper.
- *
- * @since  1.6
- */
+
 class ContactHelper extends JHelperContent
 {
-	/**
-	 * Configure the Linkbar.
-	 *
-	 * @param   string  $vName  The name of the active view.
-	 *
-	 * @return  void
-	 *
-	 * @since   1.6
-	 */
 	public static function addSubmenu($vName)
 	{
 		JHtmlSidebar::addEntry(
@@ -40,15 +27,6 @@ class ContactHelper extends JHelperContent
 		);
 	}
 
-	/**
-	 * Adds Count Items for Category Manager.
-	 *
-	 * @param   stdClass[]  &$items  The contact category objects
-	 *
-	 * @return  stdClass[]
-	 *
-	 * @since   3.5
-	 */
 	public static function countItems(&$items)
 	{
 		$db = JFactory::getDbo();

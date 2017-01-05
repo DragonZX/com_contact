@@ -1,34 +1,13 @@
 <?php
-/**
- * @package     Joomla.Administrator
- * @subpackage  com_contact
- *
- * @copyright   Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- */
-
 defined('_JEXEC') or die;
 
 use Joomla\Utilities\ArrayHelper;
 
 JLoader::register('ContactHelper', JPATH_ADMINISTRATOR . '/components/com_contact/helpers/contact.php');
 
-/**
- * Contact HTML helper class.
- *
- * @since  1.6
- */
+
 abstract class JHtmlContact
 {
-	/**
-	 * Get the associated language flags
-	 *
-	 * @param   integer  $contactid  The item id to search associations
-	 *
-	 * @return  string  The language HTML
-	 *
-	 * @throws  Exception
-	 */
 	public static function association($contactid)
 	{
 		// Defaults
